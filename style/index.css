@@ -1,4 +1,12 @@
+@import "choices.min.css";
 @import "header.css";
+@import "hero.css";
+@import "vacancies.css";
+@import "filter.css";
+@import "cards.css";
+@import "vacancy.css";
+@import "checkbox.css";
+@import "choices.css";
 @import "footer.css";
 
 
