@@ -32,6 +32,8 @@
     margin-bottom: 0;
 }
 
-.footer__link {
-
+@media (max-width: 1140px) {
+    .footer {
+        padding: 40px 0 32px;
+    }
 }

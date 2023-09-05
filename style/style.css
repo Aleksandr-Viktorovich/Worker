@@ -6,6 +6,7 @@
 }
 
 html {
+    scroll-behavior: smooth;
     position: relative;
     box-sizing: border-box;
 }
@@ -75,4 +76,14 @@ fieldset {
 
 .blue-text{
     color: #2a18ff;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        --width: 880px;
+    }
+}
+
+@media (max-width: 940px) {
+
 }
