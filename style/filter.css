@@ -69,3 +69,31 @@
     right: 0;
     color: #ccc;
 }
+
+@media (max-width: 940px) {
+    .filter__title {
+        position: fixed;
+        transform: scale(0);
+    }
+
+    .filter__input {
+        max-width: 140px;
+    }
+
+    .filter__checkboxes {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    .filter__buttons {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .filter__reset {
+        position: static;
+    }
+}

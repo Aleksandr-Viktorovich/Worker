@@ -68,3 +68,30 @@
         letter-spacing: 1.04px;
     }
 }
+
+@media (max-width: 640px) {
+    .hero {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero__title {
+        max-width: 290px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 32px;
+    }
+
+    .hero__container {
+        padding-top: 0;
+        padding-bottom: 262px;
+    }
+
+    .hero__container:after {
+        right: auto;
+        top: auto;
+        height: 269px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

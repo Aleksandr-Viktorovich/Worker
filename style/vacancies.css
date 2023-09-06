@@ -35,15 +35,54 @@
 
     .vacancies__container {
         flex-direction: column;
+        row-gap: 0;
     }
 
     .vacancies__filter-btn {
         display: flex;
         align-items: center;
+        margin-bottom: 24px;
+        transition: margin-bottom .2s ease-in-out;
+        transition-delay: .2s;
     }
 
     .vacancies__filter-btn:after {
         content: "";
         display: block;
+        width: 20px;
+        height: 20px;
+        background: url("../img/arrow_blue_down.svg") no-repeat center;
+    }
+
+    .vacancies__filter-btn_active {
+        margin-bottom: 32px;
+        transition-delay: 0s;
+    }
+
+    .vacancies__filter-btn_active:after {
+        transform: rotate(180deg);
+    }
+
+    .vacancies__filter {
+        width: 100%;
+        flex-basis: auto;
+        height: 0;
+        overflow: hidden;
+        transition: height .4s ease-in-out;
+    }
+
+    .vacancies__filter_active {
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    .vacancies__cards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .vacancies__filter-btn_active {
+        margin-bottom: 24px;
     }
 }
