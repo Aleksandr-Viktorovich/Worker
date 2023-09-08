@@ -13,6 +13,18 @@ header {
     padding: 12px 32px;
     background-color: #A6ADFF;
     border-radius: 8px;
+    transition: background-color, color;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.header__link:focus-visible {
+    border: 2px solid #4f58be;
+}
+
+.header__link:hover {
+    color: #fff;
+    background-color: #2a18ff;
 }
 
 @media (max-width: 1140px) {

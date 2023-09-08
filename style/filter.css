@@ -5,7 +5,7 @@
 .filter__title {
     font-size: 20px;
     font-weight: 400;
-    margin-bottom: 3px;
+    margin-bottom: 32px;
 }
 
 .filter__form {
@@ -61,6 +61,17 @@
     padding: 8px 24px;
     border-radius: 4px;
     background-color: #A6ADFF;
+    transition: background-color, color;
+    transition-duration: .2s;
+}
+
+.filter__button:focus-visible {
+    border: 2px solid #4f58be;
+}
+
+.filter__button:hover {
+    color: #fff;
+    background-color: #2a18ff;
 }
 
 .filter__reset {
@@ -83,8 +94,7 @@
     .filter__checkboxes {
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(180px, 1fr));
-        gap: 24px;
-        justify-content: space-between;
+        gap: 24px 70px;
     }
 
     .filter__buttons {

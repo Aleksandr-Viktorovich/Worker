@@ -51,7 +51,13 @@
         display: block;
         width: 20px;
         height: 20px;
-        background: url("../img/arrow_blue_down.svg") no-repeat center;
+        background: url("../img/arrow_blue_down.svg") no-repeat center 7px;
+        color: #2a18ff;
+        transition: color .2s ease-in-out;
+    }
+
+    .vacancies__filter-btn:hover {
+        color: #a6adff;
     }
 
     .vacancies__filter-btn_active {
